@@ -1,0 +1,12 @@
+$main_color: #7777bb;
+
+.intro-component{
+    padding: 20px;
+    background-color: $main_color;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    h1{
+        text-transform: uppercase;
+    }
+}
