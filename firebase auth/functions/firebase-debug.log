@@ -1,0 +1,34 @@
+[debug] [2023-01-19T13:50:27.276Z] ----------------------------------------------------------------------
+[debug] [2023-01-19T13:50:27.278Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only functions
+[debug] [2023-01-19T13:50:27.279Z] CLI Version:   11.20.0
+[debug] [2023-01-19T13:50:27.279Z] Platform:      darwin
+[debug] [2023-01-19T13:50:27.279Z] Node Version:  v16.16.0
+[debug] [2023-01-19T13:50:27.280Z] Time:          Thu Jan 19 2023 16:50:27 GMT+0300 (East Africa Time)
+[debug] [2023-01-19T13:50:27.281Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-19T13:50:27.366Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-19T13:50:27.366Z] > authorizing via signed-in user (hughherschell2018@gmail.com)
+[debug] [2023-01-19T13:50:27.366Z] [iam] checking project pagination-scroll-1ea14 for permissions ["firebase.projects.get"]
+[debug] [2023-01-19T13:50:27.368Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions [none]
+[debug] [2023-01-19T13:50:27.368Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions x-goog-quota-user=projects/pagination-scroll-1ea14
+[debug] [2023-01-19T13:50:27.368Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-19T13:50:28.912Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions 200
+[debug] [2023-01-19T13:50:28.912Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-19T13:50:28.913Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14 [none]
+[debug] [2023-01-19T13:50:29.371Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14 200
+[debug] [2023-01-19T13:50:29.372Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14 {"projectId":"pagination-scroll-1ea14","projectNumber":"187132417844","displayName":"firebase auth","name":"projects/pagination-scroll-1ea14","resources":{"hostingSite":"pagination-scroll-1ea14"},"state":"ACTIVE","etag":"1_1dcbc21c-733f-471c-88e3-a213384e7f26"}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2023-01-19T13:50:29.384Z] defaultcredentials: writing to file /Users/hughherschell/.config/firebase/hughherschell2018_gmail_com_application_default_credentials.json
+[debug] [2023-01-19T13:50:29.386Z] Setting GAC to /Users/hughherschell/.config/firebase/hughherschell2018_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/hughherschell/.config/firebase/hughherschell2018_gmail_com_application_default_credentials.json"}}
+[debug] [2023-01-19T13:50:29.387Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14/adminSdkConfig [none]
+[debug] [2023-01-19T13:50:29.869Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14/adminSdkConfig 200
+[debug] [2023-01-19T13:50:29.869Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14/adminSdkConfig {"projectId":"pagination-scroll-1ea14","storageBucket":"pagination-scroll-1ea14.appspot.com"}
+[debug] [2023-01-19T13:50:29.886Z] Error: listen EADDRINUSE: address already in use 127.0.0.1:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:1559:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:73:8)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  functions: Watching "/Users/hughherschell/Documents/codes/learning/firebase auth/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/hughherschell/Documents/codes/learning/firebase auth/functions\" for Cloud Functions..."}}
+[debug] [2023-01-19T13:50:29.893Z] Validating nodejs source

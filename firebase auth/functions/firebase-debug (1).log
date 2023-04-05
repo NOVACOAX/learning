@@ -1,0 +1,66 @@
+[debug] [2023-01-19T13:32:31.603Z] ----------------------------------------------------------------------
+[debug] [2023-01-19T13:32:31.605Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2023-01-19T13:32:31.605Z] CLI Version:   11.20.0
+[debug] [2023-01-19T13:32:31.605Z] Platform:      darwin
+[debug] [2023-01-19T13:32:31.606Z] Node Version:  v16.16.0
+[debug] [2023-01-19T13:32:31.607Z] Time:          Thu Jan 19 2023 16:32:31 GMT+0300 (East Africa Time)
+[debug] [2023-01-19T13:32:31.607Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-19T13:32:31.691Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-19T13:32:31.692Z] > authorizing via signed-in user (hughherschell2018@gmail.com)
+[debug] [2023-01-19T13:32:31.692Z] [iam] checking project pagination-scroll-1ea14 for permissions ["firebase.projects.get"]
+[debug] [2023-01-19T13:32:31.694Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions [none]
+[debug] [2023-01-19T13:32:31.694Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions x-goog-quota-user=projects/pagination-scroll-1ea14
+[debug] [2023-01-19T13:32:31.694Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-19T13:32:33.211Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions 200
+[debug] [2023-01-19T13:32:33.211Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-19T13:32:33.212Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14 [none]
+[debug] [2023-01-19T13:32:33.709Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14 200
+[debug] [2023-01-19T13:32:33.709Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14 {"projectId":"pagination-scroll-1ea14","projectNumber":"187132417844","displayName":"firebase auth","name":"projects/pagination-scroll-1ea14","resources":{"hostingSite":"pagination-scroll-1ea14"},"state":"ACTIVE","etag":"1_1dcbc21c-733f-471c-88e3-a213384e7f26"}
+[info] 
+[info] === Serving from '/Users/hughherschell/Documents/codes/learning/firebase auth'...
+[info] 
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2023-01-19T13:32:33.725Z] defaultcredentials: writing to file /Users/hughherschell/.config/firebase/hughherschell2018_gmail_com_application_default_credentials.json
+[debug] [2023-01-19T13:32:33.729Z] Setting GAC to /Users/hughherschell/.config/firebase/hughherschell2018_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/hughherschell/.config/firebase/hughherschell2018_gmail_com_application_default_credentials.json"}}
+[debug] [2023-01-19T13:32:33.730Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14/adminSdkConfig [none]
+[debug] [2023-01-19T13:32:34.203Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14/adminSdkConfig 200
+[debug] [2023-01-19T13:32:34.203Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14/adminSdkConfig {"projectId":"pagination-scroll-1ea14","storageBucket":"pagination-scroll-1ea14.appspot.com"}
+[debug] [2023-01-19T13:32:34.218Z] Error: listen EADDRINUSE: address already in use 127.0.0.1:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:1559:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:73:8)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  functions: Watching "/Users/hughherschell/Documents/codes/learning/firebase auth/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/hughherschell/Documents/codes/learning/firebase auth/functions\" for Cloud Functions..."}}
+[debug] [2023-01-19T13:32:34.226Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-01-19T13:32:35.071Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-01-19T13:32:35.071Z] Building nodejs source

@@ -1,0 +1,273 @@
+[debug] [2023-01-19T12:08:13.290Z] ----------------------------------------------------------------------
+[debug] [2023-01-19T12:08:13.292Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only functions
+[debug] [2023-01-19T12:08:13.292Z] CLI Version:   11.20.0
+[debug] [2023-01-19T12:08:13.292Z] Platform:      darwin
+[debug] [2023-01-19T12:08:13.293Z] Node Version:  v16.16.0
+[debug] [2023-01-19T12:08:13.294Z] Time:          Thu Jan 19 2023 15:08:13 GMT+0300 (East Africa Time)
+[debug] [2023-01-19T12:08:13.294Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-19T12:08:13.389Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-19T12:08:13.389Z] > authorizing via signed-in user (hughherschell2018@gmail.com)
+[debug] [2023-01-19T12:08:13.389Z] [iam] checking project pagination-scroll-1ea14 for permissions ["firebase.projects.get"]
+[debug] [2023-01-19T12:08:13.391Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions [none]
+[debug] [2023-01-19T12:08:13.391Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions x-goog-quota-user=projects/pagination-scroll-1ea14
+[debug] [2023-01-19T12:08:13.391Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-19T12:08:15.152Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions 200
+[debug] [2023-01-19T12:08:15.152Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-19T12:08:15.153Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14 [none]
+[debug] [2023-01-19T12:08:15.813Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14 200
+[debug] [2023-01-19T12:08:15.813Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14 {"projectId":"pagination-scroll-1ea14","projectNumber":"187132417844","displayName":"firebase auth","name":"projects/pagination-scroll-1ea14","resources":{"hostingSite":"pagination-scroll-1ea14"},"state":"ACTIVE","etag":"1_1dcbc21c-733f-471c-88e3-a213384e7f26"}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2023-01-19T12:08:15.826Z] defaultcredentials: writing to file /Users/hughherschell/.config/firebase/hughherschell2018_gmail_com_application_default_credentials.json
+[debug] [2023-01-19T12:08:15.829Z] Setting GAC to /Users/hughherschell/.config/firebase/hughherschell2018_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/hughherschell/.config/firebase/hughherschell2018_gmail_com_application_default_credentials.json"}}
+[debug] [2023-01-19T12:08:15.830Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14/adminSdkConfig [none]
+[debug] [2023-01-19T12:08:16.420Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14/adminSdkConfig 200
+[debug] [2023-01-19T12:08:16.420Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14/adminSdkConfig {"projectId":"pagination-scroll-1ea14","storageBucket":"pagination-scroll-1ea14.appspot.com"}
+[info] i  functions: Watching "/Users/hughherschell/Documents/codes/learning/firebase auth/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/hughherschell/Documents/codes/learning/firebase auth/functions\" for Cloud Functions..."}}
+[debug] [2023-01-19T12:08:16.442Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-01-19T12:08:17.376Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-01-19T12:08:17.376Z] Building nodejs source
+[debug] [2023-01-19T12:08:17.380Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-01-19T12:08:18.191Z] Serving at port 9005
+
+[debug] [2023-01-19T12:08:18.268Z] Got response from /__/functions.yaml {"endpoints":{"addAdminRole":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"addAdminRole"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-01-19T12:08:18.278Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: addAdminRole. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: addAdminRole."}}
+[info] ✔  functions[us-central1-addAdminRole]: http function initialized (http://localhost:5000/pagination-scroll-1ea14/us-central1/addAdminRole). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5000/pagination-scroll-1ea14/us-central1/addAdminRole)."}}
+[debug] [2023-01-19T12:08:40.764Z] [work-queue] {"queuedWork":["/pagination-scroll-1ea14/us-central1/addAdminRole-2023-01-19T12:08:40.764Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-01-19T12:08:40.764Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/pagination-scroll-1ea14/us-central1/addAdminRole-2023-01-19T12:08:40.764Z"],"workRunningCount":1}
+[debug] [2023-01-19T12:08:40.767Z] Accepted request GET /pagination-scroll-1ea14/us-central1/addAdminRole --> us-central1-addAdminRole
+[debug] [2023-01-19T12:08:40.779Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-01-19T12:08:40.779Z] [functions] Got req.url=/pagination-scroll-1ea14/us-central1/addAdminRole, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/pagination-scroll-1ea14/us-central1/addAdminRole, mapping to path=/"}}
+[debug] [2023-01-19T12:08:40.803Z] [worker-pool] addWorker(us-central1-addAdminRole) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-addAdminRole)"}}
+[debug] [2023-01-19T12:08:40.804Z] [worker-pool] Adding worker with key us-central1-addAdminRole, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-addAdminRole, total=1"}}
+[debug] [2023-01-19T12:08:42.512Z] [runtime-status] [32004] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32004] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-01-19T12:08:42.514Z] [runtime-status] [32004] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32004] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-01-19T12:08:42.515Z] [runtime-status] [32004] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32004] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-01-19T12:08:42.518Z] [runtime-status] [32004] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32004] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-01-19T12:08:42.637Z] [runtime-status] [32004] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32004] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-01-19T12:08:42.638Z] [runtime-status] [32004] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32004] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2023-01-19T12:08:42.638Z] [runtime-status] [32004] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32004] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-01-19T12:08:42.655Z] [runtime-status] [32004] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32004] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-01-19T12:08:42.656Z] [runtime-status] [32004] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32004] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-01-19T12:08:42.656Z] [runtime-status] [32004] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32004] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-01-19T12:08:42.661Z] [runtime-status] [32004] initializeApp(DEFAULT) {"storageBucket":"pagination-scroll-1ea14.appspot.com","projectId":"pagination-scroll-1ea14"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32004] initializeApp(DEFAULT) {\"storageBucket\":\"pagination-scroll-1ea14.appspot.com\",\"projectId\":\"pagination-scroll-1ea14\"}"}}
+[debug] [2023-01-19T12:08:42.676Z] [runtime-status] [32004] Functions runtime initialized. {"cwd":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32004] Functions runtime initialized. {\"cwd\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2023-01-19T12:08:42.676Z] [runtime-status] [32004] Listening to port: /var/folders/dh/3rm0yn4x3p7b0vd5bq39qw380000gn/T/fire_emu_7350dab39028891d.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32004] Listening to port: /var/folders/dh/3rm0yn4x3p7b0vd5bq39qw380000gn/T/fire_emu_7350dab39028891d.sock"}}
+[debug] [2023-01-19T12:08:42.696Z] [worker-us-central1-addAdminRole-f4405429-1454-4a21-a0c7-99e94a949f08]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addAdminRole-f4405429-1454-4a21-a0c7-99e94a949f08]: IDLE"}}
+[debug] [2023-01-19T12:08:42.697Z] [worker-pool] submitRequest(triggerId=us-central1-addAdminRole) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-addAdminRole)"}}
+[debug] [2023-01-19T12:08:42.698Z] [worker-us-central1-addAdminRole-f4405429-1454-4a21-a0c7-99e94a949f08]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addAdminRole-f4405429-1454-4a21-a0c7-99e94a949f08]: BUSY"}}
+[info] i  functions: Beginning execution of "addAdminRole" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"Beginning execution of \"addAdminRole\""}}
+[info] >  {"severity":"WARNING","message":"Request has invalid method. GET"} {"user":{"severity":"WARNING","message":"Request has invalid method. GET"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"WARNING\",\"message\":\"Request has invalid method. GET\"}"}}
+[info] >  {"severity":"ERROR","message":"Invalid request, unable to process."} {"user":{"severity":"ERROR","message":"Invalid request, unable to process."},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"ERROR\",\"message\":\"Invalid request, unable to process.\"}"}}
+[debug] [2023-01-19T12:08:42.717Z] [worker-us-central1-addAdminRole-f4405429-1454-4a21-a0c7-99e94a949f08]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addAdminRole-f4405429-1454-4a21-a0c7-99e94a949f08]: IDLE"}}
+[debug] [2023-01-19T12:08:42.718Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "addAdminRole" in 16.844842ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"Finished \"addAdminRole\" in 16.844842ms"}}
+[debug] [2023-01-19T12:08:42.862Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2023-01-19T12:09:07.544Z] File /Users/hughherschell/Documents/codes/learning/firebase auth/functions/package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/hughherschell/Documents/codes/learning/firebase auth/functions/package.json changed, reloading triggers"}}
+[debug] [2023-01-19T12:09:08.447Z] File /Users/hughherschell/Documents/codes/learning/firebase auth/functions/package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/hughherschell/Documents/codes/learning/firebase auth/functions/package.json changed, reloading triggers"}}
+[debug] [2023-01-19T12:09:09.454Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-01-19T12:09:10.259Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase serve --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-01-19T12:09:10.261Z] Building nodejs source
+[debug] [2023-01-19T12:09:10.262Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-01-19T12:09:10.475Z] Serving at port 9005
+
+[debug] [2023-01-19T12:09:10.531Z] Got response from /__/functions.yaml {"endpoints":{"addAdminRole":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"addAdminRole"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-01-19T12:09:10.536Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: addAdminRole. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: addAdminRole."}}
+[debug] [2023-01-19T12:09:10.546Z] [worker-pool] Shutting down IDLE worker (us-central1-addAdminRole) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-addAdminRole)"}}
+[debug] [2023-01-19T12:09:10.546Z] [worker-us-central1-addAdminRole-f4405429-1454-4a21-a0c7-99e94a949f08]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addAdminRole-f4405429-1454-4a21-a0c7-99e94a949f08]: FINISHING"}}
+[debug] [2023-01-19T12:09:10.556Z] [worker-us-central1-addAdminRole-f4405429-1454-4a21-a0c7-99e94a949f08]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addAdminRole-f4405429-1454-4a21-a0c7-99e94a949f08]: exited"}}
+[debug] [2023-01-19T12:09:10.557Z] [worker-us-central1-addAdminRole-f4405429-1454-4a21-a0c7-99e94a949f08]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addAdminRole-f4405429-1454-4a21-a0c7-99e94a949f08]: FINISHED"}}
+[debug] [2023-01-19T12:09:20.946Z] [work-queue] {"queuedWork":["/pagination-scroll-1ea14/us-central1/addAdminRole-2023-01-19T12:09:20.946Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-01-19T12:09:20.946Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/pagination-scroll-1ea14/us-central1/addAdminRole-2023-01-19T12:09:20.946Z"],"workRunningCount":1}
+[debug] [2023-01-19T12:09:20.946Z] Accepted request GET /pagination-scroll-1ea14/us-central1/addAdminRole --> us-central1-addAdminRole
+[debug] [2023-01-19T12:09:20.949Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-01-19T12:09:20.949Z] [functions] Got req.url=/pagination-scroll-1ea14/us-central1/addAdminRole, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/pagination-scroll-1ea14/us-central1/addAdminRole, mapping to path=/"}}
+[debug] [2023-01-19T12:09:20.950Z] [worker-pool] Cleaned up workers for us-central1-addAdminRole: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-addAdminRole: 1 --> 0"}}
+[debug] [2023-01-19T12:09:20.959Z] [worker-pool] addWorker(us-central1-addAdminRole) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-addAdminRole)"}}
+[debug] [2023-01-19T12:09:20.959Z] [worker-pool] Adding worker with key us-central1-addAdminRole, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-addAdminRole, total=1"}}
+[debug] [2023-01-19T12:09:21.880Z] [runtime-status] [32040] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32040] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-01-19T12:09:21.881Z] [runtime-status] [32040] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32040] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-01-19T12:09:21.882Z] [runtime-status] [32040] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32040] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-01-19T12:09:21.883Z] [runtime-status] [32040] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32040] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-01-19T12:09:21.925Z] [runtime-status] [32040] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32040] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-01-19T12:09:21.927Z] [runtime-status] [32040] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32040] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2023-01-19T12:09:21.927Z] [runtime-status] [32040] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32040] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-01-19T12:09:21.927Z] [runtime-status] [32040] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32040] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-01-19T12:09:21.928Z] [runtime-status] [32040] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32040] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-01-19T12:09:21.928Z] [runtime-status] [32040] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32040] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-01-19T12:09:21.932Z] [runtime-status] [32040] initializeApp(DEFAULT) {"storageBucket":"pagination-scroll-1ea14.appspot.com","projectId":"pagination-scroll-1ea14"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32040] initializeApp(DEFAULT) {\"storageBucket\":\"pagination-scroll-1ea14.appspot.com\",\"projectId\":\"pagination-scroll-1ea14\"}"}}
+[debug] [2023-01-19T12:09:21.937Z] [runtime-status] [32040] Functions runtime initialized. {"cwd":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32040] Functions runtime initialized. {\"cwd\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2023-01-19T12:09:21.938Z] [runtime-status] [32040] Listening to port: /var/folders/dh/3rm0yn4x3p7b0vd5bq39qw380000gn/T/fire_emu_2ee682e27048fb7f.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32040] Listening to port: /var/folders/dh/3rm0yn4x3p7b0vd5bq39qw380000gn/T/fire_emu_2ee682e27048fb7f.sock"}}
+[debug] [2023-01-19T12:09:22.004Z] [worker-us-central1-addAdminRole-d4ee3542-b619-4068-bfe3-a736e4c3aed4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addAdminRole-d4ee3542-b619-4068-bfe3-a736e4c3aed4]: IDLE"}}
+[debug] [2023-01-19T12:09:22.004Z] [worker-pool] submitRequest(triggerId=us-central1-addAdminRole) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-addAdminRole)"}}
+[debug] [2023-01-19T12:09:22.004Z] [worker-us-central1-addAdminRole-d4ee3542-b619-4068-bfe3-a736e4c3aed4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addAdminRole-d4ee3542-b619-4068-bfe3-a736e4c3aed4]: BUSY"}}
+[info] i  functions: Beginning execution of "addAdminRole" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"Beginning execution of \"addAdminRole\""}}
+[info] >  {"severity":"WARNING","message":"Request has invalid method. GET"} {"user":{"severity":"WARNING","message":"Request has invalid method. GET"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"WARNING\",\"message\":\"Request has invalid method. GET\"}"}}
+[info] >  {"severity":"ERROR","message":"Invalid request, unable to process."} {"user":{"severity":"ERROR","message":"Invalid request, unable to process."},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"ERROR\",\"message\":\"Invalid request, unable to process.\"}"}}
+[info] i  functions: Finished "addAdminRole" in 4.179286ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"Finished \"addAdminRole\" in 4.179286ms"}}
+[debug] [2023-01-19T12:10:39.969Z] [work-queue] {"queuedWork":["/pagination-scroll-1ea14/us-central1/addAdminRole-2023-01-19T12:10:39.968Z"],"queueLength":1,"runningWork":["/pagination-scroll-1ea14/us-central1/addAdminRole-2023-01-19T12:09:20.946Z"],"workRunningCount":1}
+[debug] [2023-01-19T12:10:39.969Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/pagination-scroll-1ea14/us-central1/addAdminRole-2023-01-19T12:09:20.946Z","/pagination-scroll-1ea14/us-central1/addAdminRole-2023-01-19T12:10:39.968Z"],"workRunningCount":2}
+[debug] [2023-01-19T12:10:39.969Z] Accepted request GET /pagination-scroll-1ea14/us-central1/addAdminRole --> us-central1-addAdminRole
+[debug] [2023-01-19T12:10:39.972Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-01-19T12:10:39.972Z] [functions] Got req.url=/pagination-scroll-1ea14/us-central1/addAdminRole, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/pagination-scroll-1ea14/us-central1/addAdminRole, mapping to path=/"}}
+[debug] [2023-01-19T12:10:39.978Z] [worker-pool] addWorker(us-central1-addAdminRole) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-addAdminRole)"}}
+[debug] [2023-01-19T12:10:39.979Z] [worker-pool] Adding worker with key us-central1-addAdminRole, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-addAdminRole, total=2"}}
+[debug] [2023-01-19T12:10:40.881Z] [runtime-status] [32051] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32051] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-01-19T12:10:40.883Z] [runtime-status] [32051] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32051] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-01-19T12:10:40.883Z] [runtime-status] [32051] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32051] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-01-19T12:10:40.884Z] [runtime-status] [32051] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32051] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-01-19T12:10:40.925Z] [runtime-status] [32051] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32051] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-01-19T12:10:40.925Z] [runtime-status] [32051] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32051] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2023-01-19T12:10:40.926Z] [runtime-status] [32051] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32051] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-01-19T12:10:40.927Z] [runtime-status] [32051] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32051] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-01-19T12:10:40.928Z] [runtime-status] [32051] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32051] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-01-19T12:10:40.928Z] [runtime-status] [32051] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32051] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-01-19T12:10:40.931Z] [runtime-status] [32051] initializeApp(DEFAULT) {"storageBucket":"pagination-scroll-1ea14.appspot.com","projectId":"pagination-scroll-1ea14"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32051] initializeApp(DEFAULT) {\"storageBucket\":\"pagination-scroll-1ea14.appspot.com\",\"projectId\":\"pagination-scroll-1ea14\"}"}}
+[debug] [2023-01-19T12:10:40.937Z] [runtime-status] [32051] Functions runtime initialized. {"cwd":"/Users/hughherschell/Documents/codes/learning/firebase auth/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32051] Functions runtime initialized. {\"cwd\":\"/Users/hughherschell/Documents/codes/learning/firebase auth/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2023-01-19T12:10:40.938Z] [runtime-status] [32051] Listening to port: /var/folders/dh/3rm0yn4x3p7b0vd5bq39qw380000gn/T/fire_emu_9d7c921734b066da.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"[runtime-status] [32051] Listening to port: /var/folders/dh/3rm0yn4x3p7b0vd5bq39qw380000gn/T/fire_emu_9d7c921734b066da.sock"}}
+[debug] [2023-01-19T12:10:41.027Z] [worker-us-central1-addAdminRole-d3f8ae33-86f9-4e31-8c56-19c62bd2d6e6]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addAdminRole-d3f8ae33-86f9-4e31-8c56-19c62bd2d6e6]: IDLE"}}
+[debug] [2023-01-19T12:10:41.028Z] [worker-pool] submitRequest(triggerId=us-central1-addAdminRole) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-addAdminRole)"}}
+[debug] [2023-01-19T12:10:41.028Z] [worker-us-central1-addAdminRole-d3f8ae33-86f9-4e31-8c56-19c62bd2d6e6]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addAdminRole-d3f8ae33-86f9-4e31-8c56-19c62bd2d6e6]: BUSY"}}
+[info] i  functions: Beginning execution of "addAdminRole" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"Beginning execution of \"addAdminRole\""}}
+[info] >  {"severity":"WARNING","message":"Request has invalid method. GET"} {"user":{"severity":"WARNING","message":"Request has invalid method. GET"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"WARNING\",\"message\":\"Request has invalid method. GET\"}"}}
+[info] >  {"severity":"ERROR","message":"Invalid request, unable to process."} {"user":{"severity":"ERROR","message":"Invalid request, unable to process."},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"ERROR\",\"message\":\"Invalid request, unable to process.\"}"}}
+[debug] [2023-01-19T12:10:41.036Z] [worker-us-central1-addAdminRole-d3f8ae33-86f9-4e31-8c56-19c62bd2d6e6]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addAdminRole-d3f8ae33-86f9-4e31-8c56-19c62bd2d6e6]: IDLE"}}
+[debug] [2023-01-19T12:10:41.036Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/pagination-scroll-1ea14/us-central1/addAdminRole-2023-01-19T12:09:20.946Z"],"workRunningCount":1}
+[info] i  functions: Finished "addAdminRole" in 4.021941ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addAdminRole"},"extension":{},"message":"Finished \"addAdminRole\" in 4.021941ms"}}
+[info] Shutting down...
+[info] i  functions: Waiting for all functions to finish... {"metadata":{"emulator":{"name":"functions"},"message":"Waiting for all functions to finish..."}}
+[info] Shutting down...
+[info] i  functions: Waiting for all functions to finish... {"metadata":{"emulator":{"name":"functions"},"message":"Waiting for all functions to finish..."}}
+[debug] [2023-01-19T13:31:15.327Z] [worker-us-central1-addAdminRole-d4ee3542-b619-4068-bfe3-a736e4c3aed4]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addAdminRole-d4ee3542-b619-4068-bfe3-a736e4c3aed4]: exited"}}
+[debug] [2023-01-19T13:31:15.328Z] [worker-us-central1-addAdminRole-d4ee3542-b619-4068-bfe3-a736e4c3aed4]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addAdminRole-d4ee3542-b619-4068-bfe3-a736e4c3aed4]: FINISHED"}}
+[debug] [2023-01-19T13:31:15.328Z] [worker-us-central1-addAdminRole-d3f8ae33-86f9-4e31-8c56-19c62bd2d6e6]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addAdminRole-d3f8ae33-86f9-4e31-8c56-19c62bd2d6e6]: exited"}}
+[debug] [2023-01-19T13:31:15.328Z] [worker-us-central1-addAdminRole-d3f8ae33-86f9-4e31-8c56-19c62bd2d6e6]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addAdminRole-d3f8ae33-86f9-4e31-8c56-19c62bd2d6e6]: FINISHED"}}
+[debug] [2023-01-19T13:31:26.828Z] ----------------------------------------------------------------------
+[debug] [2023-01-19T13:31:26.830Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2023-01-19T13:31:26.831Z] CLI Version:   11.20.0
+[debug] [2023-01-19T13:31:26.831Z] Platform:      darwin
+[debug] [2023-01-19T13:31:26.831Z] Node Version:  v16.16.0
+[debug] [2023-01-19T13:31:26.832Z] Time:          Thu Jan 19 2023 16:31:26 GMT+0300 (East Africa Time)
+[debug] [2023-01-19T13:31:26.833Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-19T13:31:26.920Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-19T13:31:26.920Z] > authorizing via signed-in user (hughherschell2018@gmail.com)
+[debug] [2023-01-19T13:31:26.920Z] [iam] checking project pagination-scroll-1ea14 for permissions ["firebase.projects.get"]
+[debug] [2023-01-19T13:31:26.921Z] > refreshing access token with scopes: []
+[debug] [2023-01-19T13:31:26.923Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-01-19T13:31:26.923Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-19T13:31:27.485Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-01-19T13:31:27.485Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-19T13:31:27.502Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions [none]
+[debug] [2023-01-19T13:31:27.502Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions x-goog-quota-user=projects/pagination-scroll-1ea14
+[debug] [2023-01-19T13:31:27.503Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-19T13:31:29.300Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions 200
+[debug] [2023-01-19T13:31:29.301Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pagination-scroll-1ea14:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-19T13:31:29.302Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14 [none]
+[debug] [2023-01-19T13:31:30.126Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14 200
+[debug] [2023-01-19T13:31:30.127Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14 {"projectId":"pagination-scroll-1ea14","projectNumber":"187132417844","displayName":"firebase auth","name":"projects/pagination-scroll-1ea14","resources":{"hostingSite":"pagination-scroll-1ea14"},"state":"ACTIVE","etag":"1_1dcbc21c-733f-471c-88e3-a213384e7f26"}
+[info] 
+[info] === Serving from '/Users/hughherschell/Documents/codes/learning/firebase auth'...
+[info] 
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2023-01-19T13:31:30.144Z] defaultcredentials: writing to file /Users/hughherschell/.config/firebase/hughherschell2018_gmail_com_application_default_credentials.json
+[debug] [2023-01-19T13:31:30.146Z] Setting GAC to /Users/hughherschell/.config/firebase/hughherschell2018_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/hughherschell/.config/firebase/hughherschell2018_gmail_com_application_default_credentials.json"}}
+[debug] [2023-01-19T13:31:30.147Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14/adminSdkConfig [none]
+[debug] [2023-01-19T13:31:30.625Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14/adminSdkConfig 200
+[debug] [2023-01-19T13:31:30.625Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pagination-scroll-1ea14/adminSdkConfig {"projectId":"pagination-scroll-1ea14","storageBucket":"pagination-scroll-1ea14.appspot.com"}
+[debug] [2023-01-19T13:31:30.649Z] Error: listen EADDRINUSE: address already in use 127.0.0.1:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:1559:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:73:8)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  functions: Watching "/Users/hughherschell/Documents/codes/learning/firebase auth/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/hughherschell/Documents/codes/learning/firebase auth/functions\" for Cloud Functions..."}}
+[debug] [2023-01-19T13:31:30.665Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-01-19T13:31:32.230Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase serve --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-01-19T13:31:32.231Z] Building nodejs source
