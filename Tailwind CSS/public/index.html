@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-600 font-nunito ">
+
+  <div class="grid md:grid-cols-6">
+    <div class="md:col-span-1 md:flex md:justify-end">
+      <nav class="text-right">
+        <div class="flex justify-between items-center border-b border-gray-100">
+          <h1 class="font-bold uppercase p-4">
+            <a href="/" class="hover:text-gray-700">Food Ninja</a>
+          </h1>
+          <div class="px-4 cursor-pointer md:hidden" id="burger">
+            <svg class="w-6" viewBox="0 0 24 24" ><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+          </div>
+        </div>
+        <ul class="text-sm mt-6 hidden md:block space-y-1" id="menu">
+          <li class="text-gray-700 font-bold py-1 border-r-4 border-primary hover:scale-105 transition">
+            <a href="#" class="px-4 flex justify-end space-x-2">
+              <span>Home</span>
+              <svg class="w-5 fill-gray-700" viewBox="0 0 24 24" ><path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z"></path></svg>
+            </a>
+          </li>
+          <li class="py-1 border-r-4 border-white hover:scale-105 transition">
+            <a href="#" class="px-4 flex justify-end space-x-2">
+              <span>About</span>
+              <svg class="w-5 fill-gray-600" viewBox="0 0 24 24" ><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M11 11h2v6h-2zm0-4h2v2h-2z"></path></svg>
+            </a>
+          </li>
+          <li class="py-1 border-r-4 border-white hover:scale-105 transition">
+            <a href="#" class="px-4 flex justify-end space-x-2">
+              <span>Contact</span>
+              <svg class="w-5 fill-gray-600" viewBox="0 0 24 24" ><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"></path></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+    <main class="px-16 py-6 bg-gray-100 md:col-span-5">
+      <div class="flex justify-center md:justify-end space-x-6">
+        <a href="#" class="text-primary btn border-primary border-0 md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log in</a>
+        <a href="#" class="text-primary btn border-primary border-0 md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Sign up</a>
+      </div>
+
+      <header class="menu my-2 rounded-md">
+        <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+        <h3 class="text-2xl font-semibold">For Ninjas</h3>
+      </header>
+
+      <div>
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+  
+        <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- cards go here -->
+          <div class="card "> 
+            <img src="img/stew.jpg" alt="stew" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">5 Bean Chili Stew</span>
+              <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <svg class="w-5 inline-block fill-secondary-200" viewBox="0 0 24 24" ><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"></path></svg>
+              <span>25 mins</span>
+            </div>
+          </div>
+          <div class="card"> 
+            <img src="img/noodles.jpg" alt="noodles" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Veg noodles</span>
+              <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <svg class="w-5 inline-block fill-secondary-200" viewBox="0 0 24 24" ><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"></path></svg>
+              <span>25 mins</span>
+            </div>
+          </div>
+          <div class="card"> 
+            <img src="img/curry.jpg" alt="curry" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Tofu curry</span>
+              <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <svg class="w-5 inline-block fill-secondary-200" viewBox="0 0 24 24" ><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"></path></svg>
+              <span>25 mins</span>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+
+        <div class="mt-8">
+          <!-- cards go here -->
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <div class="bg-secondary-100 text-secondary-200 p-2  rounded-md btn hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">Load more</div>
+      </div>    
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
